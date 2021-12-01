@@ -1,0 +1,716 @@
+/* font-family: "Times New Roman", Times; // ok, and best practice
+font-family: Times New Roman, Times; // incorrect, Browser won't be able to find Times New Roman
+font-family: "Times New Roman", "Times"; // ok, but has extraneous quotes around Times
+you need quotes to use the "Open Sans" font, but not to use the Lobster font. 
+
+p{
+    font-family: "Times New Roman", Times, serif;
+  }
+p{
+    font-family: Arial, Helvetica, sans-serif;
+  }
+p{
+    font-family: "Lucida Console", "Courier New", monospace;
+  } 
+note: "Times New Roman", Arial and Helvetica are FAMILY_NAME,
+sans-serif, serif, monospace, fantasy and cursive are GENERIC_NAME. */
+
+/* editor.font-family: 
+Segoe Print, Sacramento, Satisfy, Caveat, Courgette, Dosis, Stalemate, Engagement, 
+East Sea Dokdo, Jim Nightshade, Poppins, 
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Arima+Madurai:wght@100;200;300;500;800&family=Dosis:wght@200;300;400;600;800&family=Overlock:ital,wght@0,400;0,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Zen+Maru+Gothic:wght@300;400;700&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  color: #BDC0C2;
+  font-family: Poppins, sans-serif;
+}
+
+
+
+
+/* this is header section */
+
+
+
+header {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  z-index: 1033;
+  top: 0;
+}
+
+.headerContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 20px auto;
+}
+
+nav.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav.navbar li {
+  margin: 0 10px;
+  list-style: none;
+}
+
+nav.navbar li a{
+  color: #303234;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  transition: 100ms;
+}
+nav.navbar li a:hover{
+  color: #ff014f;
+}
+.content-logo {
+  flex: 3;
+  display: flex;
+  align-items: center;
+}
+.content-logo img{
+  cursor: pointer;
+  width: 120px;
+}
+
+nav.navbar {
+  flex: 4;
+}
+
+.content-cart{
+  margin: 0 30px;
+}
+
+button.buy-now {
+  float: right;
+  padding: 15px 30px;
+  color: #ff014f;
+  font-family: cursive;
+  text-transform: uppercase;
+  font-weight: bold;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  cursor: pointer;
+  border: none;
+  font-weight: 700;
+}
+button.buy-now:hover{
+  color: #fff;
+  background: linear-gradient(145deg, #ff014f, #d11414);
+}
+
+
+
+/* this is presentation section */
+
+section{
+  margin:100px 0;
+}
+.container {
+  max-width: 1300px;
+  margin: 0 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.mainInformation {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 42%;
+}
+
+.presentation-picture {
+  width: 55%;
+  height: 100%;
+  box-shadow: 5px 5px 18px 1px #808080a3;
+  border-radius: 10px;
+}
+
+.presentation-picture img {
+  width: 100%;
+  padding: 30px;
+}
+
+.information{
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  margin: 0 0 35px;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+
+.nameandLoction h1{
+  font-size: 50px;
+  color: #ff014f;
+
+}
+
+.nameandLoction span{
+  color: #303234;
+}
+.nameandLoction p{
+  color: #000000b8;
+}
+.loction-info ul li{
+  color: #000000b8;
+}
+i{
+  font-size: 25px;
+  color: #ff014f;
+}
+
+.loction-info ul li{
+  list-style-type: none;
+  padding: 0 0 10px;
+}
+
+.loction{
+  margin: 35px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.location-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  margin: 0 20px 0 0;
+}
+
+.location-icon i{
+  padding: 0 0 10px;
+}
+.spacial-row {
+  align-items: flex-start;
+}
+.CVdownloadOption {
+  padding: 35px;
+  width: 100%;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+}
+
+.CVdownloadOption button {
+  padding: 15px 35px;
+  margin: 15px 20px 0 0;
+  border-radius: 5px;
+  font-family: cursive;
+  color: #ff014f;
+  font-weight: bold;
+  text-transform: lowercase;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.CVdownloadOption button:hover{
+  color: #fff;
+  background: linear-gradient(145deg, #ff014f, #d11414);
+}
+
+
+
+/* My Experience Section */
+
+
+
+.MyExperienceHeader{
+  width: 100%;
+  text-align: center;
+  margin: 30px 0;
+}
+
+.MyExperienceBox{
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+  border: none;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  border-radius: 10px;
+
+}
+.MyExperienceHeader h4{
+  color: #ff014f;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+  margin: 10px 0;
+}
+.MyExperienceHeader h1{
+  font-size: 50px;
+  font-family: Dosis;
+  color: #303234;
+
+}
+
+.myexperienceboxinfo span{
+  color: #fff;
+  padding: 2px 8px;
+  border-radius: 20px;
+  background: #ff014f;
+  font-size: 14px;
+}
+
+.myexperienceboxinfo h1{
+  color: #303234;
+  padding: 10px 0 0;
+  font-family: 'Dosis', sans-serif;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 24px;
+}
+.myexperienceboxinfo h2{
+  color: #585858;
+  font-family: 'Zen Maru Gothic', sans-serif;
+  font-weight: 500;
+}
+.myexperienceboxinfo p{
+  font-size: 16px;
+  color:#585858;
+  letter-spacing: 1px;
+  padding: 5px 0;
+}
+.myexperienceboximg{
+  width: 20%;
+  height: 165px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.myexperienceboximg img{
+  width: 100%;
+  transition: 500ms;
+}
+.myexperienceboximg img:hover{
+  transform: scale(1.09);
+}
+.myexperienceboxinfo{
+  width: 50%;
+  margin: 0 0 0 -100px;
+} 
+.myexperienceboxbutton button{
+  padding: 15px 35px;
+  border: none;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  border-radius: 10px;
+  color: #ff014f;
+  transform: 500ms;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family: cursive;
+  cursor: pointer;
+}
+.myexperienceboxbutton button:hover{
+  color: #fff;
+  background: linear-gradient(145deg, #ff014f, #d11414);
+}
+
+.Go-headerContent i{
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: block;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 0 0 10px rgb(0 0 0 / 25%);
+  text-align: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  line-height: 50px;
+  font-size: 25px;
+  z-index: 990;
+  cursor: pointer;
+}
+.Go-headerContent i:hover{
+  background: linear-gradient(145deg, #ff014f, #d11414);
+  color: #fff;
+}
+
+
+
+/* My Resume Section */
+
+
+
+.MyResumeLinks{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 30px 0;
+}
+.MyresumeContent{
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.MyResumeLinks .myresume{
+  flex-basis: 25%;
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+  transition: 500ms;
+}
+.MyResumeLinks .myresume a{
+  display: block;
+  text-decoration: none;
+  color:#ff014f;
+  padding: 30px;
+  text-transform: uppercase;
+  font-family: cursive;
+}
+.MyResumeLinks .myresume:hover{
+  transform: scale(1.1);
+  z-index: 50;
+  background: linear-gradient(145deg, #ff014f, #d11414);
+  border-radius: 10px;
+}
+.MyResumeLinks .myresume a:hover{
+  color: #fff;
+}
+
+.MyreusmeSubject{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.MyreusmeSubject .MyresumesubHead{
+  flex-basis: 50%;
+}
+.MyresumesubHead h1 {
+  font-family: 'DOSIS';
+  letter-spacing: 3px;
+  font-size: 32px;
+  color: #1e2125;
+  margin-bottom: 20px;
+}
+
+.MyresumesubHead p {
+  color: #ff014f;
+  font-size: 15px;
+  padding: 10px 0;
+  font-family: revert;
+}
+
+.MyResumeInformation {
+  flex-basis: 48%;
+  padding: 40px;
+  margin: 25px 0;
+  border: none;
+  border-radius: 10px;
+  background: inear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  transition: 400ms;
+}
+.MyResumeInformation:hover{
+  background: linear-gradient(145deg, #ff014f, #d11414);
+}
+.MyResumeInformation:hover .MyResumeParagraph{
+  color: #fff;
+}
+.MyResumeInformation:hover .hovereffect{
+  color: #fff;
+}
+.MyResumeInfoBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.MyResumeBoxInfo h2{
+  color: #303234;
+  margin: 0 0 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+}
+
+.MyResumeParagraph{
+  color: #787878;
+  margin-top: 30px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+.MyResumeInformation h4{
+  font-family: 'Overlock', cursive;
+  letter-spacing: 1px;
+  color: #323030;
+}
+.MyResumeInformation:hover{
+  transform: scale(1.1);
+}
+.MyResumeDate-time span{
+  color: #ff014f;
+}
+
+.MyResumeDate-time:hover .hovereffect{
+  color: #fff;
+}
+
+  
+
+/* My Portfolio Section */
+
+
+.PortfolioContent{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 95%;
+  margin: 30px auto;
+}
+.portfoliobox{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-basis: 31.5%;
+  padding: 35px;
+  box-shadow: 5px 5px 15px #d3d7dd, -5px -5px 15px #f3eeee;
+  border-radius: 10px;
+}
+.portfoliobox:hover img{
+  transform: scale(1.1);
+}
+
+.portfolioboximg{
+  width: 100%;
+  height: 245.02px;
+  overflow: hidden;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.portfolioboximg img{
+  width: 100%;
+  height: 100%;
+  transition: 400ms;
+}
+.portfoliotitle{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 10px 0;
+}
+.portfolioLeft{
+  flex-basis: 65%;
+}
+.portfolioRight{
+  flex-basis: 35%;
+  text-align: right;
+}
+i.far.fa-heart {
+  font-size: 14px;
+}
+i.far.fa-clock{
+  font-size: 14px;
+}
+.portfolioRight span{
+  font-size: 14px;
+  color: #ff014f;
+}
+.portfolioLeft a{
+  color: #303133;
+  text-decoration: none;
+}
+.portfolioLeft a:hover{
+  color: #ff014f;
+}
+.portfolioLink h2 a{
+  text-decoration: none;
+  color: #323030;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-align: center;
+  transition: 4ms;
+}
+.portfolioLink h2 a:hover{
+  color: #ff014f;
+}
+
+
+
+/* Footer Section Start */
+
+
+
+.footercontent {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 100px 0;
+}
+
+.footercontent::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #cfcfcf;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.footercontent::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #cfcfcf;
+  bottom: 0;
+  right: 0;
+}
+.footerinfo {
+  flex-basis: 25%;
+  color: black;
+  font-size: 18px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.footerinfo h4 {
+  color: #ff014f;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footerinfo {
+  flex-basis: 25%;
+  color: black;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.footerinfo h4 {
+  color: #ff014f;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.footerinfolinks ul{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.footerinfolinks ul li a{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 0 10px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 64px;
+  border-radius: 5px;
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 5px 5px 15px #D1D9E6, -5px -5px 15px #ffffff;
+  transition: 400ms;
+}
+.footerinfolinks ul li a i {
+  color: #3c3e41c7;
+}
+.footerinfolinks ul li:hover .hoveranchor{
+  background: linear-gradient(145deg, #ff014f, #d11414);
+  transform: scale(1.1);
+}
+.footerinfolinks ul li a:hover .hovericon{
+  color: #fff;
+}
+.footerinfoimg {
+  text-align: left;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.copyright {
+  width: 100%;
+  padding: 50px 0;
+  letter-spacing: 2px;
+}
+
+.copyright p {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: #1e2125;
+  text-align: center;
+}
+.copyright p a{
+  font-family: cursive;
+  color: #1b1a1a;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+.copyright p a:hover{
+  color: #ff014f;
+}
